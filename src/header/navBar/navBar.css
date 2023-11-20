@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.NavBar--container {
+    display: flex;
+    align-items: center;
+    font-family: var(--fontBarlowCondensed);
+    text-transform: uppercase;
+    width: 100%;
+    background-color: blue;
+}
+
+.NavBar--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    background-color: green;
+}
+
+.NavBar--ul {
+    margin-left: auto;
+    width: 55%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.NavBar--ul::after {
+    content: '';
+    position: absolute;
+    top: 4.5%;
+    left: 10%;
+    width: 38%;
+    height: 1px;
+    background-color: var(--middleBlue);
+}
+
+.NavBar--ul ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.NavBar--ul li {
+    margin: 20px;
+    color: var(--white);
+    position: relative;
+}
+
+.NavBar--ul li::after {
+    position: absolute;
+    content: '';
+    top: 190%;
+    left: 0%;
+    width: 0%;
+    height: 4px;
+    background-color: var(--white);
+    transition: width .5s;
+} 
+
+.NavBar--ul li:hover::after {
+    width: 100%;
+}
+
+.NavBar--ul li span {
+    font-weight: bold;
+    margin-right: 5px;
+}

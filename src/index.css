@@ -1,1 +1,23 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+:root {
+    /*Fonts*/
+    --fontBellefair: 'Bellefair', serif;
+    --fontBarlowCondensed: 'Barlow Condensed', sans-serif;
+
+    /*Colors*/
+    --white: #FFFFFF;
+    --lightBlue: #D0D6F9;
+    --middleBlue: #616476;
+    --darkBlue: #0B0D17;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
