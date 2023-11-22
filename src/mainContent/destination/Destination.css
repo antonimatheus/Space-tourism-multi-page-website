@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.Destination--container {
+    background: url(../../assets/assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}

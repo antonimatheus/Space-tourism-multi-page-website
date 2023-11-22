@@ -6,7 +6,8 @@
     font-family: var(--fontBarlowCondensed);
     text-transform: uppercase;
     width: 100%;
-    background-color: blue;
+    margin-top: 35px;
+    position: fixed;
 }
 
 .NavBar--logo {
@@ -14,24 +15,25 @@
     justify-content: center;
     align-items: center;
     width: 10%;
-    background-color: green;
+    cursor: pointer;
 }
 
 .NavBar--ul {
     margin-left: auto;
     width: 55%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    background-color: rgba(51, 53, 64, 0.3);
 }
 
 .NavBar--ul::after {
     content: '';
     position: absolute;
-    top: 4.5%;
-    left: 10%;
-    width: 38%;
+    top: 50%;
+    left: -60%;
+    width: 65%;
     height: 1px;
-    background-color: var(--middleBlue);
+    background-color: rgba(51, 53, 64, 1);
 }
 
 .NavBar--ul ul {
@@ -43,20 +45,25 @@
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .NavBar--ul li {
-    margin: 20px;
+    margin: 35px;
     color: var(--white);
+    cursor: pointer;
     position: relative;
 }
 
 .NavBar--ul li::after {
     position: absolute;
     content: '';
-    top: 190%;
+    top: 260%;
     left: 0%;
     width: 0%;
     height: 4px;
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.4);
     transition: width .5s;
 } 
 
