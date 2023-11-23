@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css"
 
 function Home() {
@@ -18,9 +19,11 @@ function Home() {
                 </div>
             </div>
             <div className="Home--buttonExplore">
-                <button>
-                    Explore
-                </button>
+                <Link to='/destination'>
+                    <button>
+                        Explore
+                    </button>
+                </Link>
             </div>
         </div>
     )
