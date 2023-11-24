@@ -1,58 +1,77 @@
-import React from "react";
-import "./Destination.css"
+import React, { useState } from "react";
+import "./Destination.css";
+
+import NavBarDestination from "./NavBarDestination";
+import { destinations } from "../data.json";
 
 function Destination() {
+
+    const [selectedDestination, setSelectedDestination] = useState("Moon");
+
+    const selectedDestinationInfo = destinations.find(
+        (item) => item.name === selectedDestination
+    );
+
+    const handleDestinationClick = (destination) => {
+        setSelectedDestination(destination);
+    };
+
     return (
         <div className="Destination--container">
             <div className="Destination--content">
                 <div className="Destination--title">
-                    <h3><span>01</span> Pick up your destination</h3>
+                <h3>
+                    <span>01</span> Pick up your destination
+                </h3>
                 </div>
                 <div className="Destination--img">
-                    <img src="src\assets\assets\destination\image-moon.png" alt="Planet" />
+                {selectedDestinationInfo && (
+                    <img
+                    src={selectedDestinationInfo.images.png}
+                    alt="Planet"
+                    key={selectedDestinationInfo.name}
+                    />
+                )}
                 </div>
             </div>
 
-            <div className="Destination--planetInfo">
-                <div className="Destination--text">
-                    <div className="Destination--planetName">
-                        <h1>Moon</h1>
-                    </div>
-                    <div className="Destination--planetText">
-                        <p>
-                        See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-                        regain perspective and come back refreshed. While you’re there, take in some history 
-                        by visiting the Luna 2 and Apollo 11 landing sites.
-                        </p>
-                    </div>
+        <div className="Destination--planetInfo">
+            <div className="Destination--text">
+            <NavBarDestination
+                selectedDestination={selectedDestination}
+                onDestinationClick={handleDestinationClick}
+            />
+            <div className="Destination--planetName">
+                <h1>{selectedDestinationInfo?.name}</h1>
+            </div>
+            <div className="Destination--planetText">
+                <p>{selectedDestinationInfo?.description}</p>
+            </div>
 
-                    <div className="Destination--row">
-                    </div>
+            <div className="Destination--row"></div>
 
-                    <div className="Destination--planetStats">
-                        <div className="Destination--planetDistance">
-                            <div className="Destination--planetDistanceText">
-                                <p>Avg. Distance</p>
-                            </div>
-                            <div className="Destination--planetDistanceKm"> 
-                                <p>384,400 Km</p>
-                            </div>
-                        </div>
-                        <div className="Destination--planetTravelTime">
-                            <div className="Destination--planetTravelTimeText">
-                                <p>Est. Travel Time</p>
-                            </div>
-                            <div className="Destination--planetTravelTimeDay">
-                                <p>3 Days</p>
-                            </div>
-                        </div>
-                    </div>
-                    
+            <div className="Destination--planetStats">
+                <div className="Destination--planetDistance">
+                <div className="Destination--planetDistanceText">
+                    <p>Avg. Distance</p>
                 </div>
-                
+                <div className="Destination--planetDistanceKm">
+                    <p>{selectedDestinationInfo?.distance}</p>
+                </div>
+                </div>
+                <div className="Destination--planetTravelTime">
+                <div className="Destination--planetTravelTimeText">
+                    <p>Est. Travel Time</p>
+                </div>
+                <div className="Destination--planetTravelTimeDay">
+                    <p>{selectedDestinationInfo?.travel}</p>
+                </div>
+                </div>
+            </div>
             </div>
         </div>
-    )
+        </div>
+    );
 }
 
 export default Destination;
