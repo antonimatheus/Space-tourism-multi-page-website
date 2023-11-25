@@ -54,9 +54,9 @@
 .Home--text p {
     font-family: var(--fontBarlowCondensed);
     font-weight: 500;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     text-align: justify;
-    line-height: 25px;
+    line-height: 130%;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -90,8 +90,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 0px;
-    height: 0px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     transition: .5s width, .5s height;
     z-index: -1;

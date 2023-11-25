@@ -7,7 +7,6 @@ import { destinations } from "../data.json";
 function Destination() {
 
     const [selectedDestination, setSelectedDestination] = useState("Moon");
-
     const selectedDestinationInfo = destinations.find(
         (item) => item.name === selectedDestination
     );
@@ -20,9 +19,9 @@ function Destination() {
         <div className="Destination--container">
             <div className="Destination--content">
                 <div className="Destination--title">
-                <h3>
-                    <span>01</span> Pick up your destination
-                </h3>
+                    <h3>
+                        <span>01</span> Pick up your destination
+                    </h3>
                 </div>
                 <div className="Destination--img">
                 {selectedDestinationInfo && (
@@ -37,10 +36,12 @@ function Destination() {
 
         <div className="Destination--planetInfo">
             <div className="Destination--text">
+
             <NavBarDestination
                 selectedDestination={selectedDestination}
                 onDestinationClick={handleDestinationClick}
             />
+
             <div className="Destination--planetName">
                 <h1>{selectedDestinationInfo?.name}</h1>
             </div>

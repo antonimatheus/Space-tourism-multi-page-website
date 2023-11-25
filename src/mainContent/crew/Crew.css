@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+.Crew--container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background: url(../../assets/assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Crew--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 35%;
+    height: 80%;
+    gap: 20%;
+}
+
+.Crew--titlePage h3 {
+    text-transform: uppercase;
+    font-family: var(--fontBarlowCondensed);
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin-bottom: 15px;
+    color: var(--white);
+    letter-spacing: 4.5px;
+}
+
+.Crew--titlePage h3 span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Crew--title {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.Crew--titlePosition h3 {
+    text-transform: uppercase;
+    font-size: 1.8vw;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.Crew--titleName h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3.5vw;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.Crew--text {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 15px;
+    color: var(--white);
+}
+
+.Crew--text p {
+    font-family: var(--fontBarlowCondensed);
+    font-weight: 500;
+    font-size: 1.3vw;
+    text-align: left;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Crew--img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 35%;
+    height: 80%;
+}
+
+.Crew--img img {
+    width: 75%;
+}
