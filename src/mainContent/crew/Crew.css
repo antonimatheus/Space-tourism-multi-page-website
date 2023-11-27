@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 35%;
+    width: 40%;
     height: 80%;
     gap: 20%;
 }
@@ -45,6 +45,7 @@
     text-transform: uppercase;
     font-size: 1.8vw;
     font-weight: 400;
+    letter-spacing: 3px;
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.5);
 
@@ -52,9 +53,10 @@
 
 .Crew--titleName h1 {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 3.5vw;
     margin-bottom: 10px;
+    width: 100%;
     color: var(--white);
 }
 
@@ -62,6 +64,7 @@
     display: flex;
     flex-direction: column;
     width: 85%;
+    height: 15vh;
     margin-top: 15px;
     color: var(--white);
 }
@@ -76,15 +79,44 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
+.navBarCrew--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navBarCrew--ul ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 90%;
+    gap: 40%;
+    cursor: pointer;
+}
+
+
+.navBarCrew--ul ul i {
+    display: flex;
+    color: rgba(96, 100, 118, 0.3);
+    transition: .4s;
+}
+
+.navBarCrew--ul ul i:hover {
+    color: var(--white);
+}
+
 .Crew--img {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    width: 35%;
-    height: 80%;
+    width: 40%;
+    height: 75%;
 }
 
 .Crew--img img {
-    width: 75%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

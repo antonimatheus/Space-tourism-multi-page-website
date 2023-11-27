@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Crew.css"
-import navBarCrew from "./navBarCrew"
+import NavBarCrew from "./navBarCrew";
+import { crew } from "../data.json";
 
 function Crew() {
+
+    const [selectedName, setSelectedName] = useState("Douglas Hurley");
+    const selectedCrewMember = crew.find((item) => item.name === selectedName);
+
     return (
         <div className="Crew--container">
             <div className="Crew--content">
@@ -11,25 +16,37 @@ function Crew() {
                 </div>
                 <div>
                     <div className="Crew--title">
-                        <div className="Crew--titlePosition">
-                            <h3>Commander</h3>
-                        </div>
+                    <div className="Crew--titlePosition">
+                        {
+                            selectedCrewMember && (
+                                <h3>{selectedCrewMember.role}</h3>
+                            )
+                        }
+                    </div>
                         <div className="Crew--titleName">
-                            <h1>Douglas Hurley</h1>
+                            {
+                                selectedCrewMember && (
+                                    <h1>{selectedCrewMember.name}</h1>
+                                )
+                            }
                         </div>
                     </div>
                     <div className="Crew--text">
-                        <p>
-                            Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-                            and former NASA astronaut. He launched into space for the third time as
-                            commander of Crew Dragon Demo-2.
-                        </p>
+                        {
+                            selectedCrewMember && (
+                                <p>{selectedCrewMember.bio}</p>
+                            )
+                        }
                     </div>
                 </div>
-                <navBarCrew />
+                <NavBarCrew setSelectedName={setSelectedName}/>
             </div>
-            <div className="Crew--img">
-                <img src="src/assets/assets/crew/image-douglas-hurley.png" alt="img" />
+            <div className="Crew--img"> 
+            {
+                selectedCrewMember && (
+                    <img src={selectedCrewMember.images.png} alt="img" />
+                )
+            }
             </div>
         </div>
     )
