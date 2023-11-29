@@ -3,11 +3,134 @@
 .Technology--container {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
     background: url(../../assets/assets/technology/background-technology-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100vw;
     height: 100vh;
+}
+
+.Technology--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    height: 80%;
+    gap: 20%;
+
+}
+
+.Technology--content {
+    display: flex;
+    flex-direction: column;
+}
+
+.navBarTechnology--ul ul {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap: 30px;
+    cursor: pointer;
+}
+
+.navBarTechnology--ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--middleBlue);
+    font-size: 25px;
+    width: 5vw;
+    height: 10vh;
+    transition: .4s;
+}
+
+.navBarTechnology--ul li:hover {
+    border-color: var(--white);
+}
+
+.Technology--titlePage h3 {
+    text-transform: uppercase;
+    font-family: var(--fontBarlowCondensed);
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin-bottom: 15px;
+    color: var(--white);
+    letter-spacing: 4.5px;
+}
+
+.Technology--titlePage h3 span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Technology--contentBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+}
+
+.Technology--title {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.Technology--subTitle {
+    text-transform: uppercase;
+    font-family: var(--fontBarlowCondensed);
+    font-weight: 500;
+    font-size: 1vw;
+    margin-bottom: 15px;
+    color: var(--white);
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Technology--titleName h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3.5vw;
+    margin-bottom: 10px;
+    width: 100%;
+    color: var(--white);
+}
+
+.Technology--text {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 15vh;
+    margin-top: 15px;
+    color: var(--white);
+}
+
+.Technology--text p {
+    font-family: var(--fontBarlowCondensed);
+    font-weight: 500;
+    font-size: 1.3vw;
+    text-align: left;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Technology--img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+    height: 75%;
+    position: relative;
+}
+
+.Technology--img img {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(22%, -50%);
+    display: flex;
+    width: 75%;
 }

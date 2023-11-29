@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 35%;
+    width: 40%;;
     height: 80%;
     gap: 15px;
     gap: 35px;
@@ -51,7 +51,7 @@
 }
 
 .Destination--img img {
-    width: 75%;
+    width: 70%;
     animation: rotate 60s linear infinite;
 }
 
@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 35%;
+    width: 40%;
     height: 80%;
     gap: 15px;
     gap: 35px;
