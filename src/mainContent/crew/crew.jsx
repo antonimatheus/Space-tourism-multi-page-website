@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Crew.css"
 import NavBarCrew from "./navBarCrew";
-import { crew } from "../data.json";
+import { crew } from "../data";
 
 function Crew() {
 

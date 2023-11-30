@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Destination.css";
 
 import NavBarDestination from "./NavBarDestination";
-import { destinations } from "../data.json";
+import { destinations } from "../data";
 
 function Destination() {
 
