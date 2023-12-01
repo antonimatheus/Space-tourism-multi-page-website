@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./Crew.css"
 import NavBarCrew from "./navBarCrew";
-import { crew } from "../data";
+import { Data } from "../data";
 
 function Crew() {
 
     const [selectedName, setSelectedName] = useState("Douglas Hurley");
-    const selectedCrewMember = crew.find((item) => item.name === selectedName);
+    const selectedCrewMember = Data.crew.find((item) => item.name === selectedName);
 
     return (
         <div className="Crew--container">

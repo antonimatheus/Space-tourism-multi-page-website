@@ -1,9 +1,25 @@
-{
+import React from "react"
+import moon from "../assets/assets/destination/image-moon.png"
+import mars from "../assets/assets/destination/image-mars.png"
+import europa from "../assets/assets/destination/image-europa.png"
+import titan from "../assets/assets/destination/image-titan.png"
+import douglas_hurley from "../assets/assets/crew/image-douglas-hurley.png"
+import Mark_Shuttleworth from "../assets/assets/crew/image-mark-shuttleworth.png"
+import Victor_Glover from "../assets/assets/crew/image-victor-glover.png"
+import Anousheh_Ansari from "../assets/assets/crew/image-anousheh-ansari.png"
+import launch_vehicle_portrait from "../assets/assets/technology/image-launch-vehicle-portrait.jpg"
+import launch_vehicle_landscape from "../assets/assets/technology/image-launch-vehicle-landscape.jpg"
+import spaceport_portrait from "../assets/assets/technology/image-spaceport-portrait.jpg"
+import spaceport_landscape from "../assets/assets/technology/image-spaceport-landscape.jpg"
+import space_capsule_portrait from "../assets/assets/technology/image-space-capsule-portrait.jpg"
+import space_capsule_landscape from "../assets/assets/technology/image-space-capsule-landscape.jpg"
+
+const Data = {
   "destinations": [
     {
       "name": "Moon",
       "images": {
-        "png": "./src/assets/assets/destination/image-moon.png",
+        "png": moon,
         "webp": "./src/assets/assets/destination/image-moon.webp"
       },
       "description": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
@@ -14,7 +30,7 @@
     {
       "name": "Mars",
       "images": {
-        "png": "./src/assets/assets/destination/image-mars.png",
+        "png": mars,
         "webp": "./src/assets/assets/destination/image-mars.webp"
       },
       "description": "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
@@ -24,7 +40,7 @@
     {
       "name": "Europa",
       "images": {
-        "png": "./src/assets/assets/destination/image-europa.png",
+        "png": europa,
         "webp": "./src/assets/assets/destination/image-europa.webp"
       },
       "description": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
@@ -34,7 +50,7 @@
     {
       "name": "Titan",
       "images": {
-        "png": "./src/assets/assets/destination/image-titan.png",
+        "png": titan,
         "webp": "./src/assets/assets/destination/image-titan.webp"
       },
       "description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
@@ -47,7 +63,7 @@
     {
       "name": "Douglas Hurley",
       "images": {
-        "png": "./src/assets/assets/crew/image-douglas-hurley.png",
+        "png": douglas_hurley,
         "webp": "./src/assets/assets/crew/image-douglas-hurley.webp"
       },
       "role": "Commander",
@@ -56,7 +72,7 @@
     {
       "name": "Mark Shuttleworth",
       "images": {
-        "png": "./src/assets/assets/crew/image-mark-shuttleworth.png",
+        "png": Mark_Shuttleworth,
         "webp": "./src/assets/assets/crew/image-mark-shuttleworth.webp"
       },
       "role": "Mission Specialist",
@@ -65,7 +81,7 @@
     {
       "name": "Victor Glover",
       "images": {
-        "png": "./src/assets/assets/crew/image-victor-glover.png",
+        "png": Victor_Glover,
         "webp": "./src/assets/assets/crew/image-victor-glover.webp"
       },
       "role": "Pilot",
@@ -74,7 +90,7 @@
     {
       "name": "Anousheh Ansari",
       "images": {
-        "png": "./src/assets/assets/crew/image-anousheh-ansari.png",
+        "png": Anousheh_Ansari,
         "webp": "./src/assets/assets/crew/image-anousheh-ansari.webp"
       },
       "role": "Flight Engineer",
@@ -86,26 +102,28 @@
     {
       "name": "Launch vehicle",
       "images": {
-        "portrait": "./src/assets/assets/technology/image-launch-vehicle-portrait.jpg",
-        "landscape": "./src/assets/assets/technology/image-launch-vehicle-landscape.jpg"
+        "portrait": launch_vehicle_portrait,
+        "landscape": launch_vehicle_landscape
       },
       "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
     },
     {
       "name": "Spaceport",
       "images": {
-        "portrait": "./src/assets/assets/technology/image-spaceport-portrait.jpg",
-        "landscape": "./src/assets/assets/technology/image-spaceport-landscape.jpg"
+        "portrait": spaceport_portrait,
+        "landscape": spaceport_landscape
       },
       "description": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
     },
     {
       "name": "Space capsule",
       "images": {
-        "portrait": "./src/assets/assets/technology/image-space-capsule-portrait.jpg",
-        "landscape": "./src/assets/assets/technology/image-space-capsule-landscape.jpg"
+        "portrait": space_capsule_portrait,
+        "landscape": space_capsule_landscape
       },
       "description": "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
     }
   ]
 }
+
+export {Data}

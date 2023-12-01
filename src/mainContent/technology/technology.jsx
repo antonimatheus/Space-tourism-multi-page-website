@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./Technology.css"
 import NavBarTechnology from "./navBarTechnology";
-import { technology } from "../data";
+import { Data } from "../data";
 
 function Technology() {
 
     const [starShip, setStarShip] = useState("Launch vehicle")
-    const selectStarShip = technology.find((item) => item.name === starShip)
+    const selectStarShip = Data.technology.find((item) => item.name === starShip)
 
     return (
         <div className="Technology--container">

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./Destination.css";
 
-import { destinations } from "../data";
+import { Data } from "../data";
 import NavBarDestination from "./navBarDestinations";
 
 function Destination() {
 
     const [selectedDestination, setSelectedDestination] = useState("Moon");
-    const selectedDestinationInfo = destinations.find((item) => item.name === selectedDestination)
+    const selectedDestinationInfo = Data.destinations.find((item) => item.name === selectedDestination)
 
     return (
         <div className="Destination--container">
