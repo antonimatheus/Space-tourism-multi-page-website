@@ -1,19 +1,12 @@
 import React, { useState } from "react";
 import "./Destination.css";
-
 import NavBarDestination from "./NavBarDestination";
 import { destinations } from "../data";
 
 function Destination() {
 
     const [selectedDestination, setSelectedDestination] = useState("Moon");
-    const selectedDestinationInfo = destinations.find(
-        (item) => item.name === selectedDestination
-    );
-
-    const handleDestinationClick = (destination) => {
-        setSelectedDestination(destination);
-    };
+    const selectedDestinationInfo = destinations.find((item) => item.name === selectedDestination)
 
     return (
         <div className="Destination--container">
@@ -28,7 +21,6 @@ function Destination() {
                     <img
                     src={selectedDestinationInfo.images.png}
                     alt="Planet"
-                    key={selectedDestinationInfo.name}
                     />
                 )}
                 </div>
@@ -36,37 +28,50 @@ function Destination() {
 
         <div className="Destination--planetInfo">
             <div className="Destination--text">
-
             <NavBarDestination
-                selectedDestination={selectedDestination}
-                onDestinationClick={handleDestinationClick}
+                setSelectedDestination={setSelectedDestination}
             />
-
             <div className="Destination--planetName">
-                <h1>{selectedDestinationInfo?.name}</h1>
+                {
+                    selectedDestinationInfo && (
+                        <h1>{selectedDestinationInfo.name}</h1>
+                    )
+                }
             </div>
             <div className="Destination--planetText">
-                <p>{selectedDestinationInfo?.description}</p>
+                {
+                    selectedDestinationInfo && (
+                        <p>{selectedDestinationInfo.description}</p>
+                    )
+                }
             </div>
 
             <div className="Destination--row"></div>
 
             <div className="Destination--planetStats">
                 <div className="Destination--planetDistance">
-                <div className="Destination--planetDistanceText">
-                    <p>Avg. Distance</p>
-                </div>
-                <div className="Destination--planetDistanceKm">
-                    <p>{selectedDestinationInfo?.distance}</p>
-                </div>
+                    <div className="Destination--planetDistanceText">
+                        <p>Avg. Distance</p>
+                    </div>
+                    <div className="Destination--planetDistanceKm">
+                        {
+                            selectedDestinationInfo && (
+                                <p>{selectedDestinationInfo.distance}</p>
+                            )
+                        }
+                    </div>
                 </div>
                 <div className="Destination--planetTravelTime">
-                <div className="Destination--planetTravelTimeText">
-                    <p>Est. Travel Time</p>
-                </div>
-                <div className="Destination--planetTravelTimeDay">
-                    <p>{selectedDestinationInfo?.travel}</p>
-                </div>
+                    <div className="Destination--planetTravelTimeText">
+                        <p>Est. Travel Time</p>
+                    </div>
+                    <div className="Destination--planetTravelTimeDay">
+                        {
+                            selectedDestinationInfo && (
+                                <p>{selectedDestinationInfo.travel}</p>
+                            )
+                        }
+                    </div>
                 </div>
             </div>
             </div>
