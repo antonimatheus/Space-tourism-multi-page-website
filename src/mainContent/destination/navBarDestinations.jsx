@@ -2,7 +2,6 @@ import React from "react";
 import "./Destination.css";
 
 function NavBarDestination({ setSelectedDestination }) {
-    
     return (
         <div className="NavBarDestination--container">
             <div className="NavBarDestination--ul">

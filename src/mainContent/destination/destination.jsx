@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Destination.css";
-import NavBarDestination from "./NavBarDestination";
+
 import { destinations } from "../data";
+import NavBarDestination from "./navBarDestinations";
 
 function Destination() {
 
@@ -17,12 +18,11 @@ function Destination() {
                     </h3>
                 </div>
                 <div className="Destination--img">
-                {selectedDestinationInfo && (
-                    <img
-                    src={selectedDestinationInfo.images.png}
-                    alt="Planet"
-                    />
-                )}
+                    {
+                        selectedDestinationInfo && (
+                            <img src={selectedDestinationInfo.images.png} alt="Planet"/>
+                        )
+                    }
                 </div>
             </div>
 
