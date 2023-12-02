@@ -19,6 +19,7 @@
     width: 35%;
     height: 65%;
     gap: 15px;
+    animation: fadeinright 1.5s;
 }
 
 .Home--title {

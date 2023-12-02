@@ -19,12 +19,6 @@
     width: 40%;
     height: 80%;
     gap: 20%;
-
-}
-
-.Technology--content {
-    display: flex;
-    flex-direction: column;
 }
 
 .navBarTechnology--ul ul {
@@ -33,6 +27,7 @@
     color: var(--white);
     gap: 30px;
     cursor: pointer;
+    animation: fadeinright 2.5s;
 }
 
 .navBarTechnology--ul li {
@@ -69,6 +64,7 @@
     display: flex;
     flex-direction: row;
     gap: 4vw;
+    animation: fadeinright 1.5s;
 }
 
 .Technology--title {
@@ -124,6 +120,7 @@
     width: 40%;
     height: 75%;
     position: relative;
+    animation: fadeinleft 2s;
 }
 
 .Technology--img img {

@@ -21,3 +21,35 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+}
+
+@keyframes fadeinright {
+    from {
+        transform: translate(-100px);
+    }
+    to {
+        transform: translate(0px);
+    }
+}
+
+@keyframes fadeinleft {
+    from {
+        transform: translate(100px);
+    }
+    to {
+        transform: translate(0px);
+    }
+}
+
+@keyframes fadeintop {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translate(0px);
+    }
+}
+
+
