@@ -46,6 +46,13 @@ function Technology() {
                     )
                 }
             </div>
+            <div className="Technology--imgLandscape">
+            {
+                    selectStarShip && (
+                        <img src={selectStarShip.images.landscape} alt="" />
+                    )
+                }
+            </div>
         </div>
     )
 }

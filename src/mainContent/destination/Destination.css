@@ -236,3 +236,108 @@
     font-size: 1.7vw;
     font-family: var(--fontBellefair);
 }
+
+@media screen and (max-width: 1140px) {
+    .Destination--container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .Destination--content {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 40%;
+        gap: 5%;
+    }
+
+    .Destination--title {
+        align-items: flex-start;
+        width: 90%;
+        position: relative;
+    }
+
+    .Destination--title {
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .Destination--title h3 {
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
+    .Destination--img {
+        height: 75%;
+    }
+
+    .Destination--img img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+
+    .Destination--planetInfo {
+        width: 100%;
+        height: 40%;
+    }
+
+    .Destination--planetInfo div {
+        gap: 30px;
+    }
+
+    .Destination--planetName {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .Destination--planetName h1  {
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .Destination--planetText {
+        width: 70%;
+        justify-content: center;
+    }
+
+    .NavBarDestination--container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .NavBarDestination--container ul {
+        font-size: 2vw;
+    }
+
+    .Destination--planetText p {
+        text-align: center;
+        font-size: 2.2vw;
+        width: 100%;
+    }
+
+    .Destination--planetStats {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Destination--planetDistance {
+        gap: 10px;
+    }
+
+    .Destination--planetDistanceText, .Destination--planetTravelTimeText {
+        text-align: center;
+        font-size: 1.8vw;
+        width: 100%;
+    }
+
+    .Destination--planetDistanceKm, .Destination--planetTravelTimeDay {
+        text-align: center;
+        font-size: 3vw;
+        width: 100%;
+    }
+}

@@ -104,3 +104,49 @@
     height: 330px;
 }
 
+@media screen and (max-width: 1140px) {
+    .Home--container {
+        flex-direction: column;
+    }
+
+    .Home--content {
+        align-items: center;
+        width: 100%;
+    }
+
+    .Home--title h3 {
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    .Home--title h1  {
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .Home--text {
+        align-items: center;
+    }
+
+    .Home--text p {
+        text-align: center;
+        font-size: 2.2vw;
+        width: 60%;
+    }
+    
+    .Home--buttonExplore {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Home--buttonExplore button {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .Home--buttonExplore button:hover::after {
+        width: 200px;
+        height: 200px;
+    }
+}
+

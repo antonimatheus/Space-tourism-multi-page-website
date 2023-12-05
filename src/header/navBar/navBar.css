@@ -19,6 +19,9 @@
 }
 
 .NavBar--ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     width: 55%;
     height: 100%;
@@ -75,4 +78,24 @@ a {
 .NavBar--ul li span {
     font-weight: bold;
     margin-right: 5px;
+}
+
+@media screen and (max-width: 1140px) {
+
+    .NavBar--container {
+        margin: 0;
+    }
+
+    .NavBar--ul {
+        width: 70%;
+        font-size: 2vw;
+    }
+
+    .NavBar--ul::after {
+        display: none;
+    }
+
+    .NavBar--ul li::after {
+        top: 200%;
+    }
 }

@@ -18,7 +18,7 @@
     justify-content: flex-start;
     width: 40%;
     height: 80%;
-    gap: 20%;
+    gap: 10%;
 }
 
 .Crew--titlePage h3 {
@@ -96,7 +96,6 @@
     animation: fadeintop 1.5s;
 }
 
-
 .navBarCrew--ul ul i {
     display: flex;
     color: rgba(96, 100, 118, 0.3);
@@ -122,4 +121,84 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 1140px) {
+    .Crew--container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .Crew--content {
+        width: 90%;
+        height: 40%;
+        justify-content: flex-end;
+        gap: 20%;
+    }
+
+    .Crew--titlePage h3 {
+        font-size: 2.5vw;
+    }
+
+    .Crew--titlePage {
+        width: 90%;
+        position: relative;
+    }
+
+    .Crew--titlePage {
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Crew--titlePosition {
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .Crew--titlePosition h3 {
+        text-align: center;
+        font-size: 4vw;
+    }
+    
+    .Crew--titleName h1  {
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    .Crew--text {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        height: 8vh;
+    }
+    
+    .Crew--text p {
+        text-align: center;
+        font-size: 2.2vw;
+        width: 70%;
+    }
+
+    .navBarCrew--container {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navBarCrew--ul ul {
+        justify-content: center;
+    }
+
+    .Crew--img {
+        width: 90%;
+        height: 50%;
+    }
+
+    .Crew--img img {
+        width: 100%;
+        height: 90%;
+        object-fit: contain;
+    }
 }
