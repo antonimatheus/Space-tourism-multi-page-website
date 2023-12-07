@@ -52,4 +52,11 @@ body {
     }
 }
 
-
+@keyframes fadeinleftNavBar {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translate(auto);
+    }
+}

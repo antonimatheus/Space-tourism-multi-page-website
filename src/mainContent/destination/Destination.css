@@ -74,7 +74,6 @@
     gap: 15px;
     gap: 35px;
     color: var(--white);
-    animation: fadeinleft 2s;
 }
 
 .Destination--text {
@@ -133,6 +132,7 @@
     justify-content: flex-start;
     align-items: center;
     inline-size: 70%;
+    animation: fadeinright 1s;
 }
 
 .Destination--planetName h1 {
@@ -148,6 +148,7 @@
     width: 80%;
     height: 8.5vw;
     color: var(--white);
+    animation: fadeinright 1.5s;
 }
 
 .Destination--planetText p {
@@ -185,6 +186,7 @@
     align-items: center;
     width: 80%;
     gap: 50px;
+    animation: fadeintop 2s;
 }
 
 .Destination--planetDistance {

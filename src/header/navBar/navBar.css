@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.NavBar--ulBurger {
+    display: none;
+}
+
 .NavBar--ul {
     display: flex;
     justify-content: center;
@@ -87,7 +91,7 @@ a {
     }
 
     .NavBar--ul {
-        width: 70%;
+        width: 75%;
         font-size: 2vw;
     }
 
@@ -97,5 +101,64 @@ a {
 
     .NavBar--ul li::after {
         top: 200%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .NavBar--container {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        background-color: red;
+        justify-content: space-around;
+        z-index: 2;
+    }
+
+    .NavBar--logo {
+        width: 40%;
+        justify-content: flex-start;
+    }
+
+    .NavBar--ul {
+        display: none;
+    }
+
+    .NavBar--ulBurger {
+        display: flex;
+        width: 40%;
+        justify-content: flex-end;
+        position: relative;
+    }
+    
+    .NavBar--ulBurger img {
+        display: flex;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .NavBar--ulBurger ul {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 50vw;
+        height: 100vh;
+        backdrop-filter: blur(15px);
+        background-color: rgba(51, 53, 64, 0.3);
+        animation: fadeinleftNavBar 1s ease forwards;
+    }
+
+    .NavBar--ulBurger li {
+        list-style-type: none;
+        font-size: 3.5vw;
+        margin: 35px;
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    .NavBar--ulBurger li span {
+        font-weight: bold;
+        margin-right: 5px;
     }
 }

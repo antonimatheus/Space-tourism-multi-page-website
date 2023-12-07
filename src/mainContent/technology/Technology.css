@@ -145,8 +145,7 @@
     
     .Technology--content {
         width: 90%;
-        height: 50%;
-        justify-content: center;
+        height: 40%;
         align-items: center;
         gap: 0px;
     }
@@ -155,12 +154,14 @@
         flex-direction: column;
         width: 90%;
         height: 100%;
+        gap: 10%;
     }
 
     .Technology--contentBlock div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 1vw;
     }
 
     .navBarTechnology--ul ul {
@@ -169,8 +170,8 @@
     }
     
     .navBarTechnology--ul li {
-        width: 90px;
-        height: 90px;
+        width: 50px;
+        height: 50px;
     }
 
     .Technology--titlePage {
@@ -213,7 +214,6 @@
     .Technology--text p {
         text-align: center;
         font-size: 2.2vw;
-        
     }
 
     .Technology--img {
@@ -223,13 +223,13 @@
     .Technology--imgLandscape {
         display: flex;
         width: 100%;
-        height: 50%;
+        height: 60%;
         align-items: flex-end;
     }
     
     .Technology--imgLandscape img {
         width: 100%;
-        height: 80%;
+        height: 90%;
         object-fit: contain;
     }
 }
