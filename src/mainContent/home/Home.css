@@ -152,3 +152,38 @@
     }
 }
 
+@media screen and (max-width: 750px) {
+
+    .Home--content {
+        align-items: center;
+        width: 100%;
+        height: 55%;
+    }
+
+    .Home--title h3 {
+        text-align: center;
+        font-size: 3vw;
+    }
+    
+    .Home--title h1  {
+        text-align: center;
+        font-size: 15vw;
+    }
+
+    .Home--text {
+        align-items: center;
+    }
+
+    .Home--text p {
+        text-align: center;
+        font-size: 4vw;
+        width: 90%;
+    }
+    
+    .Home--buttonExplore {
+        align-items: center;
+        justify-content: center;
+        height: 45%;
+    }
+}
+

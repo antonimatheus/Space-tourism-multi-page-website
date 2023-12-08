@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import logo from "/src/assets/assets/shared/logo.svg"
 import "./navBar.css"
 
+import icon_burger from "/src/assets/assets/shared/icon-hamburger.svg"
+import close_icon from "/src/assets/assets/shared/icon-close.svg"
+
 function NavBar() {
 
 const [burger, setBurger] = useState(false)
@@ -26,7 +29,7 @@ const navBarClicked = () => {
             </div>
             
             <div className="NavBar--ulBurger" onClick={navBarClicked}>
-                <img src={burger ? "src/assets/assets/shared/icon-close.svg" : "src/assets/assets/shared/icon-hamburger.svg"} alt="img" />
+                <img src={burger ? close_icon : icon_burger} alt="img" />
                 {
                     burger && (
                     <ul>

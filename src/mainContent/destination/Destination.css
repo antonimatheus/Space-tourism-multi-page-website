@@ -343,3 +343,90 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 750px)
+{
+    .Destination--content {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 40%;
+        gap: 5%;
+    }
+
+    .Destination--title {
+        align-items: center;
+        width: 90%;
+        position: relative;
+    }
+
+    .Destination--title {
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .Destination--title h3 {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+
+    .Destination--img {
+        height: 55%;
+        align-items: flex-start;
+    }
+
+    .Destination--planetInfo {
+        width: 100%;
+        height: 40%;
+    }
+
+    .Destination--text {
+        width: 100%;
+    }
+
+    .Destination--planetName h1  {
+        text-align: center;
+        font-size: 15vw;
+    }
+
+    .NavBarDestination--container ul {
+        display: flex;
+        font-size: 2vw;
+        justify-content: space-between;
+    }
+
+    .NavBarDestination--ul li {
+        margin: 10px;
+    }
+    
+    .Destination--planetText {
+        align-items: center;
+        margin: 3%;
+    }
+
+    .Destination--planetText p {
+        text-align: center;
+        font-size: 4vw;
+        width: 80vw;
+    }
+
+    .Destination--planetStats {
+        justify-content: center;
+        width: 100%;        
+        flex-direction: column;
+    }
+
+    .Destination--planetDistanceText, .Destination--planetTravelTimeText {
+        text-align: center;
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .Destination--planetDistanceKm, .Destination--planetTravelTimeDay {
+        text-align: center;
+        font-size: 6vw;
+        width: 100%;
+    }
+}
