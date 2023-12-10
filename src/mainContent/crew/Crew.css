@@ -202,3 +202,65 @@
         object-fit: contain;
     }
 }
+
+@media screen and (max-width: 750px)
+{
+    .Crew--container {
+        flex-direction: column-reverse;
+    }
+
+    .Crew--content {
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center;
+        width: 90%;
+        height: 40%;
+        gap: 10%;
+    }
+
+    .Crew--title {
+        width: 100%;
+        position: relative;
+    }
+    
+    .Crew--titlePage h3 {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .Crew--img {
+        align-items: center;
+        justify-content: flex-end;
+        width: 90%;
+        height: 50%;
+        
+    }
+
+    .Crew--img img {
+        width: 90%;
+        height: 65%;
+        object-fit: contain; 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .Crew--text {
+        width: 100%;
+    }
+
+    .Crew--titleName h1  {
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    .navBarCrew--ul ul {
+        display: flex;
+        justify-content: center;
+        font-size: 3.5vw;
+    }
+
+    .Crew--text p {
+        text-align: center;
+        font-size: 4vw;
+        width: 80vw;
+    }
+}

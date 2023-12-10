@@ -344,8 +344,7 @@
     }
 }
 
-@media screen and (max-width: 750px)
-{
+@media screen and (max-width: 750px) {
     .Destination--content {
         justify-content: center;
         align-items: center;
@@ -369,7 +368,7 @@
     
     .Destination--title h3 {
         text-align: center;
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 
     .Destination--img {
@@ -393,12 +392,12 @@
 
     .NavBarDestination--container ul {
         display: flex;
-        font-size: 2vw;
+        font-size: 2.5vw;
         justify-content: space-between;
     }
 
     .NavBarDestination--ul li {
-        margin: 10px;
+        margin: 7px;
     }
     
     .Destination--planetText {

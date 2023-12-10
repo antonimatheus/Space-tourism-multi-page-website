@@ -146,7 +146,7 @@ a {
         height: 100vh;
         backdrop-filter: blur(15px);
         background-color: rgba(51, 53, 64, 0.3);
-        animation: fadeinleftNavBar 1s ease forwards;
+        animation: fadeinleftNavBar 1s;
     }
 
     .NavBar--ulBurger li {
