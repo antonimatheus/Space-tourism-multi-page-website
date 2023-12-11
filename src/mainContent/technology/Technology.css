@@ -240,8 +240,8 @@
         flex-direction: column-reverse;
         justify-content:center;
         align-items: center;
-        width: 90%;
-        height: 40%;
+        width: 100%;
+        height: 50%;
         gap: 10%;
     }
 
@@ -260,11 +260,8 @@
     }
 
     .Technology--imgLandscape {
-        align-items: center;
-        justify-content: flex-end;
         width: 100%;
         height: 50%;
-        
     }
 
     .Technology--text {
@@ -273,12 +270,12 @@
 
     .Technology--titleName h1  {
         text-align: center;
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
     .Technology--text p {
         text-align: center;
         font-size: 4vw;
-        width: 80vw;
+        width: 75vw;
     }
 }

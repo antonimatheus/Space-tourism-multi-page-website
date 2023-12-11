@@ -233,7 +233,6 @@
         justify-content: flex-end;
         width: 90%;
         height: 50%;
-        
     }
 
     .Crew--img img {
@@ -245,6 +244,11 @@
 
     .Crew--text {
         width: 100%;
+    }
+
+    .Crew--titleName {
+        display: flex;
+        width: 100vw;
     }
 
     .Crew--titleName h1  {
