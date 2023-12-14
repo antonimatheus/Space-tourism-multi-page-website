@@ -349,6 +349,7 @@
         width: 90%;
         height: 35%;
         gap: 5%;
+        background-color: red;
     }
 
     .Destination--title {
@@ -370,7 +371,7 @@
     }
 
     .Destination--img {
-        height: 55%;
+        height: 65%;
         align-items: flex-start;
     }
 
@@ -385,7 +386,7 @@
 
     .Destination--planetName h1  {
         text-align: center;
-        font-size: 15vw;
+        font-size: 13vw;
     }
 
     .NavBarDestination--container ul {
