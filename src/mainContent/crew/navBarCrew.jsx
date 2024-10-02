@@ -1,20 +1,40 @@
 import React from "react";
-import "./Crew.css"
+import { useSwipeable } from "react-swipeable";
+import "./Crew.css";
 
-function NavBarCrew({setSelectedName}) {
+function NavBarCrew({ setSelectedName }) {
+    const crewMembers = ["Douglas Hurley", "Mark Shuttleworth", "Victor Glover", "Anousheh Ansari"];
+    const [currentIndex, setCurrentIndex] = React.useState(0);
+
+    const handleSwipe = (deltaX) => {
+        if (deltaX < 0) {
+            // Swipe left (next)
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % crewMembers.length);
+        } else {
+            // Swipe right (previous)
+            setCurrentIndex((prevIndex) => (prevIndex - 1 + crewMembers.length) % crewMembers.length);
+        }
+        setSelectedName(crewMembers[currentIndex]);
+    };
+
+    const handlers = useSwipeable({
+        onSwipedLeft: () => handleSwipe(-1),
+        onSwipedRight: () => handleSwipe(1),
+    });
 
     return (
-        <div className="navBarCrew--container">
+        <div {...handlers} className="navBarCrew--container">
             <div className="navBarCrew--ul">
                 <ul>
-                    <li onClick={() => setSelectedName("Douglas Hurley")}><i class="fa-solid fa-circle"></i></li>
-                    <li onClick={() => setSelectedName("Mark Shuttleworth")}><i class="fa-solid fa-circle"></i></li>
-                    <li onClick={() => setSelectedName("Victor Glover")}><i class="fa-solid fa-circle"></i></li>
-                    <li onClick={() => setSelectedName("Anousheh Ansari")}><i class="fa-solid fa-circle"></i></li>
+                    {crewMembers.map((member, index) => (
+                        <li key={index} onClick={() => setSelectedName(member)}>
+                            <i className={`fa-solid fa-circle ${currentIndex === index ? 'active' : ''}`}></i>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
-    )
+    );
 }
 
 export default NavBarCrew;

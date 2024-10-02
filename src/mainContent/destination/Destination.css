@@ -51,8 +51,14 @@
 }
 
 .Destination--img img {
-    width: 70%;
+    display: flex;
+    width: 65%;
     animation: rotate 60s linear infinite;
+    transition: .5s ease-out;
+}
+
+.Destination--img img:hover {
+    width: 70%;
 }
 
 @keyframes rotate {
