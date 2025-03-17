@@ -73,15 +73,15 @@ a {
     height: 4px;
     background-color: rgba(255, 255, 255, 0.4);
     transition: width .5s;
-} 
+}
 
-.NavBar--ul li:hover::after {
+.NavBar--ul li:hover::after,
+.NavBar--ul li.active::after { /* Aqui marcamos o ativo */
     width: 100%;
 }
 
-.NavBar--ul li span {
-    font-weight: bold;
-    margin-right: 5px;
+.NavBar--ul li.active {
+    font-weight: bold; /* Opcional: dar destaque ao ativo */
 }
 
 @media screen and (max-width: 1140px) {
