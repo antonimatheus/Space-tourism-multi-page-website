@@ -1,18 +1,32 @@
-import React from "react";
-import "./Technology.css"
+import React, { useState, useEffect } from "react";
+import "./Technology.css";
 
-function NavBarTechnology({setStarShip}) {
+function NavBarTechnology({ setStarShip }) {
+    const techList = ["Launch vehicle", "Spaceport", "Space capsule"];
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Sempre que currentIndex mudar, atualiza o starShip no componente pai
+    useEffect(() => {
+        setStarShip(techList[currentIndex]);
+    }, [currentIndex]);
+
     return (
         <div className="navBarTechnology--container">
             <div className="navBarTechnology--ul">
                 <ul>
-                    <li onClick={() => setStarShip("Launch vehicle")}>1</li>
-                    <li onClick={() => setStarShip("Spaceport")}>2</li>
-                    <li onClick={() => setStarShip("Space capsule")}>3</li>
+                    {techList.map((tech, index) => (
+                        <li
+                            key={index}
+                            className={currentIndex === index ? "active" : ""}
+                            onClick={() => setCurrentIndex(index)}
+                        >
+                            {index + 1}
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
-    )
+    );
 }
 
 export default NavBarTechnology;

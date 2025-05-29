@@ -31,6 +31,7 @@
     height: 100%;
     font-size: 1.2vw;
     backdrop-filter: blur(15px);
+    padding: 10px;
     background-color: rgba(51, 53, 64, 0.3);
 }
 
@@ -51,37 +52,48 @@
     align-items: center;
     justify-content: center;
     list-style-type: none;
+    gap: 40px;
 }
 
 a {
     text-decoration: none;
 }
 
-.NavBar--ul li {
-    margin: 35px;
+.NavBar--ul ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    padding: 20px;
+}
+
+.NavBar--ul ul li {
     color: var(--white);
     cursor: pointer;
     position: relative;
 }
 
-.NavBar--ul li::after {
-    position: absolute;
+.NavBar--ul ul .active-li li {
+    font-weight: bold;
+}
+
+.NavBar--ul ul li::after {
     content: '';
-    top: 250%;
-    left: 0%;
-    width: 0%;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 0;
     height: 4px;
     background-color: rgba(255, 255, 255, 0.4);
-    transition: width .5s;
+    transition: width 0.4s ease;
 }
 
-.NavBar--ul li:hover::after,
-.NavBar--ul li.active::after { /* Aqui marcamos o ativo */
+.NavBar--ul ul .active-li li::after {
+    background-color: white;
+}
+
+.NavBar--ul ul li:hover::after,
+.NavBar--ul ul .active-li li::after {
     width: 100%;
-}
-
-.NavBar--ul li.active {
-    font-weight: bold; /* Opcional: dar destaque ao ativo */
 }
 
 @media screen and (max-width: 1140px) {
@@ -141,6 +153,8 @@ a {
 
     .NavBar--ulBurger ul {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: absolute;
         top: 0%;
         left: 50%;

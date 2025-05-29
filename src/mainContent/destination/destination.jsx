@@ -28,9 +28,11 @@ function Destination() {
 
         <div className="Destination--planetInfo">
             <div className="Destination--text">
-            <NavBarDestination
-                setSelectedDestination={setSelectedDestination}
-            />
+           <NavBarDestination
+    selectedDestination={selectedDestination}
+    setSelectedDestination={setSelectedDestination}
+/>
+
             <div className="Destination--planetName">
                 {
                     selectedDestinationInfo && (
