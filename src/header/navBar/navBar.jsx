@@ -21,20 +21,40 @@ function NavBar() {
 
       <div className="NavBar--ul">
         <ul>
-          <NavLink to="/" className={({ isActive }) => (isActive ? "active-li" : "")}>
-            <li><span>00</span> Home</li>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active-li" : "")}
+          >
+            <li>
+              <span>00</span> Home
+            </li>
           </NavLink>
 
-          <NavLink to="/destination" className={({ isActive }) => (isActive ? "active-li" : "")}>
-            <li><span>01</span> Destination</li>
+          <NavLink
+            to="/destination"
+            className={({ isActive }) => (isActive ? "active-li" : "")}
+          >
+            <li>
+              <span>01</span> Destination
+            </li>
           </NavLink>
 
-          <NavLink to="/crew" className={({ isActive }) => (isActive ? "active-li" : "")}>
-            <li><span>02</span> Crew</li>
+          <NavLink
+            to="/crew"
+            className={({ isActive }) => (isActive ? "active-li" : "")}
+          >
+            <li>
+              <span>02</span> Crew
+            </li>
           </NavLink>
 
-          <NavLink to="/technology" className={({ isActive }) => (isActive ? "active-li" : "")}>
-            <li><span>03</span> Technology</li>
+          <NavLink
+            to="/technology"
+            className={({ isActive }) => (isActive ? "active-li" : "")}
+          >
+            <li>
+              <span>03</span> Technology
+            </li>
           </NavLink>
         </ul>
       </div>
@@ -43,20 +63,44 @@ function NavBar() {
         <img src={burger ? close_icon : icon_burger} alt="menu" />
         {burger && (
           <ul>
-            <NavLink to="/" onClick={navBarClicked} className={({ isActive }) => (isActive ? "active-li" : "")}>
-              <li><span>00</span> Home</li>
+            <NavLink
+              to="/"
+              onClick={navBarClicked}
+              className={({ isActive }) => (isActive ? "active-li" : "")}
+            >
+              <li>
+                <span>00</span> Home
+              </li>
             </NavLink>
 
-            <NavLink to="/destination" onClick={navBarClicked} className={({ isActive }) => (isActive ? "active-li" : "")}>
-              <li><span>01</span> Destination</li>
+            <NavLink
+              to="/destination"
+              onClick={navBarClicked}
+              className={({ isActive }) => (isActive ? "active-li" : "")}
+            >
+              <li>
+                <span>01</span> Destination
+              </li>
             </NavLink>
 
-            <NavLink to="/crew" onClick={navBarClicked} className={({ isActive }) => (isActive ? "active-li" : "")}>
-              <li><span>02</span> Crew</li>
+            <NavLink
+              to="/crew"
+              onClick={navBarClicked}
+              className={({ isActive }) => (isActive ? "active-li" : "")}
+            >
+              <li>
+                <span>02</span> Crew
+              </li>
             </NavLink>
 
-            <NavLink to="/technology" onClick={navBarClicked} className={({ isActive }) => (isActive ? "active-li" : "")}>
-              <li><span>03</span> Technology</li>
+            <NavLink
+              to="/technology"
+              onClick={navBarClicked}
+              className={({ isActive }) => (isActive ? "active-li" : "")}
+            >
+              <li>
+                <span>03</span> Technology
+              </li>
             </NavLink>
           </ul>
         )}
